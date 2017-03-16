@@ -78,4 +78,5 @@ Copyright (c) 2017, Intel Corporation. All rights reserved.
 
 | Revision   | Revision History   | Date        |
 | ---------- | ------------------ | ----------- |
-| 0.l        | Initial release.   | March 2017  |
+| 0.l0       | Initial release.   | March 2017  |
+| 0.20       | Second release.    | March 2017  |
