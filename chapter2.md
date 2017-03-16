@@ -223,7 +223,7 @@ digraph G {
 \---------------------------------------------/
 @endditaa
 {% endplantuml %}
-###### Figure 11 - DITTA Diagram{#figure-11-ditta-diagram}
+###### Figure 11 - DITAA Diagram{#figure-11-ditaa-diagram}
 
 
 ## 2.5 Tips, Notes, Cautions, Warnings

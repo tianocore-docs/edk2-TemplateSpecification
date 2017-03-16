@@ -36,4 +36,4 @@
 * [Figure 8 - Simple DOT Diagram](chapter2.md#figure-8-simple-dot-diagram)
 * [Figure 9 - UML Diagram](chapter2.md#figure-9-uml-class-diagram)
 * [Figure 10 - DOT Diagram](chapter2.md#figure-10-dot-diagram)
-* [Figure 11 - DITTA Diagram](chapter2.md#figure-11-ditta-diagram)
+* [Figure 11 - DITAA Diagram](chapter2.md#figure-11-ditaa-diagram)
