@@ -31,5 +31,5 @@
 
 ### Tables
 
-* [Table 10 - Small Table](chapter2.md#table-10-small-table)
-* [Table 11 - Small Table With Alignment](chapter2.md#table-11-small-table-with-alignment)
+* [Table 10 - Small Table](chapter2.md#table-10---small-table)
+* [Table 11 - Small Table With Alignment](chapter2.md#table-11---small-table-with-alignment)

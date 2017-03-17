@@ -31,9 +31,8 @@
 
 ### Figures
 
-* [Figure 7 - Tianocore Logo](chapter2.md#figure-7-tianocore-logo)
-* [Figure 8 - Generated from GraphViz](chapter2.md#figure-8-generated-from-graphviz)
-* [Figure 8 - Simple DOT Diagram](chapter2.md#figure-8-simple-dot-diagram)
-* [Figure 9 - UML Diagram](chapter2.md#figure-9-uml-class-diagram)
-* [Figure 10 - DOT Diagram](chapter2.md#figure-10-dot-diagram)
-* [Figure 11 - DITAA Diagram](chapter2.md#figure-11-ditaa-diagram)
+* [Figure 7 - Tianocore Logo](chapter2.md#figure-7---tianocore-logo)
+* [Figure 8 - Simple DOT Diagram](chapter2.md#figure-8---simple-dot-diagram)
+* [Figure 9 - UML Diagram](chapter2.md#figure-9---uml-class-diagram)
+* [Figure 10 - DOT Diagram](chapter2.md#figure-10---dot-diagram)
+* [Figure 11 - DITAA Diagram](chapter2.md#figure-11---ditaa-diagram)

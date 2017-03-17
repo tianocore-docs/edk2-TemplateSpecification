@@ -47,14 +47,14 @@ This is another paragraph.
   + Hello
       + hello
   - Hello
-* [link](#second-chapter)
+* [link](#2-second-chapter)
     * Hello
     
 ## 2.2 Tables
 
 The table below is a simple table with no specified alignment.
     
-###### Table 10 - Small Table{#table-10-small-table}
+###### Table 10 - Small Table
 |  a  |  b  |  c  |
 | --- | --- | --- |
 |  1  |  2  |  3  |
@@ -62,7 +62,7 @@ The table below is a simple table with no specified alignment.
 The table below is a simple table with example of left, center, and right
 alignment.
 
-###### Table 11 - Small Table With Alignment{#table-11-small-table-with-alignment}
+###### Table 11 - Small Table With Alignment
 |  a  |  b  |  c  |
 |:--- |:---:| ---:|
 |  1  |  2  |  3  |
@@ -78,7 +78,7 @@ Code block
 ```
 Code example
 ```
-###### Example 27 - Hello world{#example-27-hello-world}
+###### Example 27 - Hello world
 
 Code block of C code with color syntax highlighting
 
@@ -93,7 +93,7 @@ DecimalToBcd8 (
   return (UINT8) (((Value / 10) << 4) | (Value % 10));
 }
 ```
-###### Example 28 - C code example{#example-28-c-code-example}
+###### Example 28 - C code example
 
 Code block of INF file.  INF files use INI file color syntax highlighting.
 
@@ -107,14 +107,14 @@ Code block of INF file.  INF files use INI file color syntax highlighting.
   VERSION_STRING                 = 1.1
   LIBRARY_CLASS                  = BaseLib 
 ```
-###### Example 29 - INI file example{#example-29-ini-file-example}
+###### Example 29 - INI file example
 
 ## 2.4 Figures
 
 The following figure is the Tianocore logo for documents
 
 ![](media/TianocoreTitlePageLogo.jpg)
-###### Figure 7 - Tianocore Logo{#figure-7-tianocore-logo}
+###### Figure 7 - Tianocore Logo
  
 The figures below are generated using the PlantUML plugin that uses [PlantUML](http://plantuml.com) syntax that is defined [here](http://plantuml.com/sitemap-language-specification).
 
@@ -129,7 +129,7 @@ digraph G {
 @enddot
 {% endplantuml %}
 
-###### Figure 8 - Simple DOT Diagram{#figure-8-simple-dot-diagram}
+###### Figure 8 - Simple DOT Diagram
 
 {% plantuml %}
 @startuml
@@ -171,7 +171,7 @@ EFI_BLOCK_IO_PROTOCOL - EFI_BLOCK_IO_MEDIA
 EFI_DISK_IO_PROTOCOL --> EFI_BLOCK_IO_PROTOCOL
 @enduml
 {% endplantuml %}
-###### Figure 9 - UML Class Diagram{#figure-9-uml-class-diagram}
+###### Figure 9 - UML Class Diagram
 
 {% plantuml %}
 @startdot
@@ -198,7 +198,7 @@ digraph G {
 }
 @enddot
 {% endplantuml %}
-###### Figure 10 - DOT Diagram{#figure-10-dot-diagram}
+###### Figure 10 - DOT Diagram
 
 {% plantuml "format"="png" %}
 @startditaa
@@ -223,7 +223,7 @@ digraph G {
 \---------------------------------------------/
 @endditaa
 {% endplantuml %}
-###### Figure 11 - DITAA Diagram{#figure-11-ditaa-diagram}
+###### Figure 11 - DITAA Diagram
 
 
 ## 2.5 Tips, Notes, Cautions, Warnings

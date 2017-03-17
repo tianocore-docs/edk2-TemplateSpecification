@@ -31,6 +31,6 @@
 
 ### Examples
 
-* [Example 27 - Hello world](chapter2.md#example-27-hello-world)
-* [Example 28 - C code example](chapter2.md#example-28-c-code-example)
-* [Example 29 - INI file example](chapter2.md#example-29-ini-file-example)
+* [Example 27 - Hello world](chapter2.md#example-27---hello-world)
+* [Example 28 - C code example](chapter2.md#example-28---c-code-example)
+* [Example 29 - INI file example](chapter2.md#example-29---ini-file-example)
