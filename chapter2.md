@@ -37,7 +37,7 @@ This is another paragraph.
 
 ## 2.1 List Items
 
-*Not a list item.  A list item requires a least once space.
+*Not a list item. A list item requires a least once space.
 
 * Hello 
 *  Hello
@@ -95,7 +95,7 @@ DecimalToBcd8 (
 ```
 ###### Example 28 - C code example
 
-Code block of INF file.  INF files use INI file color syntax highlighting.
+Code block of INF file. INF files use INI file color syntax highlighting.
 
 ```ini
 [Defines]
@@ -235,7 +235,7 @@ digraph G {
 This is a paragraph between notes
 
 *********
-**Note:** This is a multiple line note.  This is on first line.
+**Note:** This is a multiple line note. This is on first line.
 
 This is on second line.
 

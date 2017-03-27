@@ -34,7 +34,7 @@
 GitBook allows you to organize your book into chapters, each chapter is stored
 in a separate file like this one.  
 
-The heading above is an example of Heading Level 1.  It is blue and left justified.
+The heading above is an example of Heading Level 1. It is blue and left justified.
 
 The following is a link to another part of this same file
 
@@ -44,30 +44,30 @@ The following is a link to a heading in another file
 
 * [Link to Second Chapter](chapter2.md#2-second-chapter)
 
-The following are 2 links to the same external page.  The first uses only an http
-address.  The second provides a name associated with the external link.
+The following are 2 links to the same external page. The first uses only an http
+address. The second provides a name associated with the external link.
 
 * https://toolchain.gitbook.com/syntax/markdown.html
 * [Gitbook Markdown](https://toolchain.gitbook.com/syntax/markdown.html)
 
 ## 1.1 Heading 2
 
-The heading above is an example of Heading Level 2.  It is blue and left justified.
+The heading above is an example of Heading Level 2. It is blue and left justified.
 
 ### 1.1.1 Heading 3
 
-The heading above is an example of Heading Level 3.  It is blue and left justified.
+The heading above is an example of Heading Level 3. It is blue and left justified.
 
 #### 1.1.1.1 Heading 4
 
-The heading above is an example of Heading Level 4.  It is blue and left justified.
+The heading above is an example of Heading Level 4. It is blue and left justified.
 
 ##### Heading 5
 
-The heading above is an example of Heading Level 5.  It is bold and left justified.
+The heading above is an example of Heading Level 5. It is bold and left justified.
 
 ###### Heading 6
 
-The heading above is an example of Heading Level 6.  It is grey and center 
-justified.  This heading is intended to be used as the title for tables, 
+The heading above is an example of Heading Level 6. It is grey and center 
+justified. This heading is intended to be used as the title for tables, 
 figures, and examples.
