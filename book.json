@@ -5,6 +5,11 @@
     "version" : "Revision 0.20"
   },
 
-  "plugins": ["uml"],
-  "pluginsConfig": {}
+  "plugins": ["puml"],
+  "pluginsConfig": {
+    "uml": {
+      format: 'png',
+      nailgun: false
+    }
+  }
 }
