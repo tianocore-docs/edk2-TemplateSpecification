@@ -119,7 +119,7 @@ The following figure is the Tianocore logo for documents
 The figures below are generated using the PlantUML plugin that uses [PlantUML](http://plantuml.com) syntax that is defined [here](http://plantuml.com/sitemap-language-specification).
 
 
-{% plantuml %}
+```uml
 @startdot
 digraph G {
   a -> b
@@ -127,11 +127,11 @@ digraph G {
   c -> a
 }
 @enddot
-{% endplantuml %}
+```
 
 ###### Figure 8 - Simple DOT Diagram
 
-{% plantuml %}
+```uml
 @startuml
 Class EFI_DISK_IO_PROTOCOL {
   +Revision
@@ -170,10 +170,10 @@ EFI_BLOCK_IO_PROTOCOL - EFI_BLOCK_IO_MEDIA
 
 EFI_DISK_IO_PROTOCOL --> EFI_BLOCK_IO_PROTOCOL
 @enduml
-{% endplantuml %}
+```
 ###### Figure 9 - UML Class Diagram
 
-{% plantuml %}
+```uml
 @startdot
 digraph G {
   graph [style=rounded]
@@ -197,10 +197,10 @@ digraph G {
   }
 }
 @enddot
-{% endplantuml %}
+```
 ###### Figure 10 - DOT Diagram
 
-{% plantuml "format"="png" %}
+```uml
 @startditaa
 +---------------------------------------------+
 |cGRE                                         |
@@ -222,7 +222,7 @@ digraph G {
 |                                             |
 \---------------------------------------------/
 @endditaa
-{% endplantuml %}
+```
 ###### Figure 11 - DITAA Diagram
 
 
