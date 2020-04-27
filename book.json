@@ -5,7 +5,7 @@
     "version" : "Revision 0.20"
   },
 
-  "plugins": ["puml"],
+  "plugins": ["uml"],
   "pluginsConfig": {
     "uml": {
       format: 'png',
