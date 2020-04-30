@@ -41,21 +41,21 @@
 ---
 
 * Tables
-  * [Table 10 - Small Table](chapter2.md#table-10---small-table)
-  * [Table 11 - Small Table With Alignment](chapter2.md#table-11---small-table-with-alignment)
+  * [Table 10 - Small Table](chapter2.md#table-10-small-table)
+  * [Table 11 - Small Table With Alignment](chapter2.md#table-11-small-table-with-alignment)
 
 ---
   
 * Figures
-  * [Figure 7 - Tianocore Logo](chapter2.md#figure-7---tianocore-logo)
-  * [Figure 8 - Simple DOT Diagram](chapter2.md#figure-8---simple-dot-diagram)
-  * [Figure 9 - UML Diagram](chapter2.md#figure-9---uml-class-diagram)
-  * [Figure 10 - DOT Diagram](chapter2.md#figure-10---dot-diagram)
-  * [Figure 11 - DITAA Diagram](chapter2.md#figure-11---ditaa-diagram)
+  * [Figure 7 - Tianocore Logo](chapter2.md#figure-7-tianocore-logo)
+  * [Figure 8 - Simple DOT Diagram](chapter2.md#figure-8-simple-dot-diagram)
+  * [Figure 9 - UML Diagram](chapter2.md#figure-9-uml-class-diagram)
+  * [Figure 10 - DOT Diagram](chapter2.md#figure-10-dot-diagram)
+  * [Figure 11 - DITAA Diagram](chapter2.md#figure-11-ditaa-diagram)
   
 ---
 
 * Examples
-  * [Example 27 - Hello world](chapter2.md#example-27---hello-world)
-  * [Example 28 - C code example](chapter2.md#example-28---c-code-example)
-  * [Example 29 - INI file example](chapter2.md#example-29---ini-file-example)
+  * [Example 27 - Hello world](chapter2.md#example-27-hello-world)
+  * [Example 28 - C code example](chapter2.md#example-28-c-code-example)
+  * [Example 29 - INI file example](chapter2.md#example-29-ini-file-example)
