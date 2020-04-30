@@ -4,12 +4,6 @@
     "title"   : "EDK II Template Specification",
     "version" : "Revision 0.20"
   },
-
-  "plugins": ["uml"],
-  "pluginsConfig": {
-    "uml": {
-      format: 'png',
-      nailgun: false
-    }
-  }
+  "plugins": ["puml"],
+  "pluginsConfig": {}
 }
