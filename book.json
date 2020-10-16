@@ -4,6 +4,6 @@
     "title"   : "EDK II Template Specification",
     "version" : "Revision 0.20"
   },
-  "plugins": ["puml"],
+  "plugins": ["puml-aleung"],
   "pluginsConfig": {}
 }
