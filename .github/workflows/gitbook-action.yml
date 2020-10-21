@@ -28,5 +28,8 @@ jobs:
         publish_dir: ${{env.ON_PUSH_PUBDIR}}
         publish_remove_last_build: false
         gitbook_pdf: true
+        gitbook_pdf_name: ${{ github.ref }}-${{env.ON_PUSH_PUBDIR}}
         gitbook_epub: true
+        gitbook_epub_name: ${{ github.ref }}-${{env.ON_PUSH_PUBDIR}}
         gitbook_mobi: true
+        gitbook_mobi_name: ${{ github.ref }}-${{env.ON_PUSH_PUBDIR}}
