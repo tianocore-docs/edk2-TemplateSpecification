@@ -17,7 +17,8 @@ jobs:
         raw=$(git branch -r --contains ${{ github.ref }})
         branch=${raw/  origin\/}
         pubdir=${branch////-}
-        reponame=${${{ github.repository }}////-}
+        raw = ${{ github.repository }}
+        reponame=${raw////-}
         echo $raw
         echo $branch
         echo $pubdir
