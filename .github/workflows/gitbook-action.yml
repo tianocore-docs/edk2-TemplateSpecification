@@ -15,11 +15,12 @@ jobs:
     - name: Get Branch
       run: |
         raw=$(git branch -r --contains ${{ github.ref }})
+        echo $raw
         branch=${raw/  origin\/}
         pubdir=${branch////-}
-        raw = ${{ github.repository }}
-        reponame=${raw////-}
+        raw = $(${{ github.repository }})
         echo $raw
+        reponame=${raw////-}
         echo $branch
         echo $pubdir
         echo $reponame
