@@ -15,18 +15,10 @@ jobs:
     - name: Get Branch
       run: |
         raw=$(git branch -r --contains ${{ github.ref }})
-        echo $raw
         branch=${raw/  origin\/}
         pubdir=${branch////-}
-        raw = $(${{ github.repository }})
-        echo $raw
-        reponame=${raw////-}
-        echo $branch
-        echo $pubdir
-        echo $reponame
         echo "ON_PUSH_BRANCH_NAME=$branch" >> $GITHUB_ENV
         echo "ON_PUSH_PUBDIR=$pubdir" >> $GITHUB_ENV
-        echo "ON_PUSH_REPO_NAME=$reponame" >> $GITHUB_ENV
     - name: Gitbook Action
       uses: zanderzhao/gitbook-action@v1.2.2
       with:
@@ -36,8 +28,8 @@ jobs:
         publish_dir: ${{env.ON_PUSH_PUBDIR}}
         publish_remove_last_build: false
         gitbook_pdf: true
-        gitbook_pdf_name: ${{ env.ON_PUSH_REPO_NAME }}-${{env.ON_PUSH_PUBDIR}}
+        gitbook_pdf_name: ${{ github.event.repository.name }}-${{env.ON_PUSH_PUBDIR}}
         gitbook_epub: true
-        gitbook_epub_name: ${{ env.ON_PUSH_REPO_NAME }}-${{env.ON_PUSH_PUBDIR}}
+        gitbook_epub_name: ${{ github.event.repository.name }}-${{env.ON_PUSH_PUBDIR}}
         gitbook_mobi: true
-        gitbook_mobi_name: ${{ env.ON_PUSH_REPO_NAME }}-${{env.ON_PUSH_PUBDIR}}
+        gitbook_mobi_name: ${{ github.event.repository.name }}-${{env.ON_PUSH_PUBDIR}}
