@@ -18,6 +18,10 @@ jobs:
         branch=${raw/  origin\/}
         pubdir=${branch////-}
         reponame=${${{ github.repository }}////-}
+        echo $raw
+        echo $branch
+        echo $pubdir
+        echo $reponame
         echo "ON_PUSH_BRANCH_NAME=$branch" >> $GITHUB_ENV
         echo "ON_PUSH_PUBDIR=$pubdir" >> $GITHUB_ENV
         echo "ON_PUSH_REPO_NAME=$reponame" >> $GITHUB_ENV
