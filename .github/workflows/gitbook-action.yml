@@ -26,6 +26,7 @@ jobs:
         token: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
         source_branch: ${{env.ON_PUSH_BRANCH_NAME}}
         publish_branch: gh-pages
+        publish_remove_last_build: false
         gitbook_pdf: true
         gitbook_pdf_name: ${{ github.event.repository.name }}-${{env.ON_PUSH_PUBDIR}}
         gitbook_epub: true
