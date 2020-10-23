@@ -11,6 +11,6 @@
 /_book
 
 # eBook build output
-/*.epub
-/*.mobi
-/*.pdf
+/book.epub
+/book.mobi
+/book.pdf
