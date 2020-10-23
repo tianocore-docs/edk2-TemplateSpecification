@@ -32,7 +32,7 @@ jobs:
         source_branch: ${{env.ON_PUSH_BRANCH_NAME}}
         publish_branch: gh-pages
         publish_dir: ${{env.ON_PUSH_PUBDIR}}
-        publish_remove_last_build: ${{ github.event.inputs.publish_remove_last_build }}
+        publish_remove_last_build: true
         gitbook_pdf: true
         gitbook_pdf_dir: .
         gitbook_pdf_name: ${{ github.event.repository.name }}-${{env.ON_PUSH_PUBDIR}}
