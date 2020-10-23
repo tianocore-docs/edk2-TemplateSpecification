@@ -4,6 +4,9 @@
     "title"   : "EDK II Template Specification",
     "version" : "Revision 0.20"
   },
+  "pdf": {
+    "fontFamily" : "Courier"
+  },
   "plugins": ["puml-aleung"],
   "pluginsConfig": {}
 }
