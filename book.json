@@ -5,7 +5,7 @@
     "version" : "Revision 0.20"
   },
   "pdf": {
-    "fontFamily" : "Courier"
+        "fontFamily": "Courier"
   },
   "plugins": ["puml-aleung"],
   "pluginsConfig": {}
