@@ -24,7 +24,7 @@ jobs:
       uses: zanderzhao/gitbook-action@v1.2.4
       with:
         token: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
-        font_install: sudo apt-get install fonts-noto-cjk
+        font_install: sudo apt-get install ttf-mscorefonts-installer
         source_branch: ${{env.ON_PUSH_BRANCH_NAME}}
         publish_branch: gh-pages
         publish_dir: ${{env.ON_PUSH_PUBDIR}}
