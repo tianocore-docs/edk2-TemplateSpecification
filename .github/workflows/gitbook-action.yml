@@ -20,14 +20,10 @@ jobs:
         pubdir=${pubdir////-}
         echo "ON_PUSH_BRANCH_NAME=$branch" >> $GITHUB_ENV
         echo "ON_PUSH_PUBDIR=$pubdir" >> $GITHUB_ENV
-        fc-list
-        sudo apt-get install ttf-mscorefonts-installer
-        fc-list
     - name: Gitbook Action
       uses: zanderzhao/gitbook-action@v1.2.4
       with:
         token: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
-        font_install: sudo apt-get install ttf-mscorefonts-installer
         source_branch: ${{env.ON_PUSH_BRANCH_NAME}}
         publish_branch: gh-pages
         publish_dir: ${{env.ON_PUSH_PUBDIR}}
