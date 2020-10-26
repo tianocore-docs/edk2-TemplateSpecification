@@ -47,8 +47,8 @@ The following is a link to a heading in another file
 The following are 2 links to the same external page. The first uses only an http
 address. The second provides a name associated with the external link.
 
-* https://toolchain.gitbook.com/syntax/markdown.html
-* [Gitbook Markdown](https://toolchain.gitbook.com/syntax/markdown.html)
+* https://github.com/GitbookIO/gitbook/blob/master/docs/syntax/markdown.md
+* [Gitbook Markdown](https://github.com/GitbookIO/gitbook/blob/master/docs/syntax/markdown.md)
 
 ## 1.1 Heading 2
 
