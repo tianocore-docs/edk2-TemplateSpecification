@@ -42,7 +42,6 @@
   * [2.3 Code Examples](chapter2.md#23-code-examples)
   * [2.4 Figures](chapter2.md#24-figures)
   * [2.5 Tips, Notes, Cautions, Warnings](chapter2.md#25-tips-notes-cautions-warnings)
-* [3 Third Chapter](chapter3.md#3-third-chapter)
 
 ---
 
