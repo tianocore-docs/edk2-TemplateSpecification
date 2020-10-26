@@ -1,9 +1,11 @@
 p {
-    font-family: Ariel, Tahoma, sans-serif, Lato;
+    font-family: Lato, Ariel, Tahoma, sans-serif;
 }
+
 body {
-    font-family: Ariel, Tahoma, sans-serif, Lato;
+    font-family: Lato, Ariel, Tahoma, sans-serif;
 }
+
 h1 {
     color: #0860A8;
     font-weight: bold;
