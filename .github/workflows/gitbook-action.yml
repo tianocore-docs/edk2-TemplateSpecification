@@ -13,9 +13,8 @@ jobs:
     - name: Checkout action
       uses: actions/checkout@v2
     - name: Get Branch
-      run: |
-        raw=$(git branch -r --contains ${{ github.ref }} | tail -1)
-        branch=${raw/  origin\/}
+      run: |        
+        branch=${{github.ref_name}}
         pubdir=${branch/master/draft}
         pubdir=${pubdir////-}
         echo "ON_PUSH_BRANCH_NAME=$branch" >> $GITHUB_ENV
