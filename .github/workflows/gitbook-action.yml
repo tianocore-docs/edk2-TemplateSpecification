@@ -32,7 +32,7 @@ jobs:
       run: |        
         branch=${{github.ref_name}}
         pubdir=${branch/master/draft}
-        pubdir=${branch/main/draft}
+        pubdir=${pubdir/main/draft}
         pubdir=${pubdir////-}
         echo "ON_PUSH_BRANCH_NAME=$branch" >> $GITHUB_ENV
         echo "ON_PUSH_PUBDIR=$pubdir" >> $GITHUB_ENV
