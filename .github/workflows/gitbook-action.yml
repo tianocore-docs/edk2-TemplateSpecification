@@ -28,13 +28,18 @@ jobs:
         uses: gsactions/commit-message-checker@v2
         with:
           pattern: '^Signed-off-by: .+ <.+@.+\..+>$'
+          excludeDescription: 'true' # optional: this excludes the description body of a pull request
+          excludeTitle: 'true' # optional: this excludes the title of a pull request          
           error: 'Commit message must include a Signed-off-by tag in the format: Signed-off-by: Name <email>'
           accessToken: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
+          checkAllCommitMessages: 'true'
         continue-on-error: true
       - name: Check commit message contributed under tag
         uses: gsactions/commit-message-checker@v2
         with:
           pattern: '^Contributed-under: TianoCore Contribution Agreement 1\.1$'
+          excludeDescription: 'true' # optional: this excludes the description body of a pull request
+          excludeTitle: 'true' # optional: this excludes the title of a pull request          
           error: 'Commit message must include Contributed-under: TianoCore Contribution Agreement 1.1'
           accessToken: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
           checkAllCommitMessages: 'true'
