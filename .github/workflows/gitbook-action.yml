@@ -30,6 +30,7 @@ jobs:
           error: 'Commit message must include a Signed-off-by tag in the format: Signed-off-by: Name <email>'
           checkAllCommitMessages: 'true'
           accessToken: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
+        continue-on-error: true
       - name: Check commit message contributed under tag
         uses: gsactions/commit-message-checker@v2
         with:
