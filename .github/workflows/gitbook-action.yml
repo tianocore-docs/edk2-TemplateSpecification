@@ -18,8 +18,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  check-commit-messages:
-    name: Check Commit Messages
+  check-commit-messages-signed-off-by:
+    name: Check Commit Messages Signed-off-by tag
     runs-on: ubuntu-latest
     steps:
       # Step 1: Checkout the repository
@@ -35,7 +35,13 @@ jobs:
           error: 'Commit message must include a Signed-off-by tag in the format: Signed-off-by: Name <email>'
           accessToken: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
           checkAllCommitMessages: 'true'
-        continue-on-error: true
+  check-commit-messages-contributed-under:
+    name: Check Commit Messages Contronuted-under tag
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
       - name: Check commit message contributed under tag
         uses: gsactions/commit-message-checker@v2
         with:
@@ -46,11 +52,13 @@ jobs:
           accessToken: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
           checkAllCommitMessages: 'true'
   build:
-    needs: check-commit-messages
+    needs: 
+      - check-commit-messages-signed-off-by
+      - check-commit-messages-contributed-under
     runs-on: ubuntu-latest
     steps:
     - name: Checkout action
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Get Branch Name
       run: |
         branch=${{github.ref_name}}
