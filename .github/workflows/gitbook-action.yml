@@ -26,7 +26,7 @@ jobs:
         uses: gsactions/commit-message-checker@v2
         with:
           pattern: '^Signed-off-by: .+ <.+@.+\..+>$'
-          flags: 'g'
+          flags: 'gm'
           error: 'Commit message must include a Signed-off-by tag in the format: Signed-off-by: Name <email>'
           checkAllCommitMessages: 'true'
           accessToken: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
@@ -34,7 +34,7 @@ jobs:
         uses: gsactions/commit-message-checker@v2
         with:
           pattern: '^Contributed-under: TianoCore Contribution Agreement 1\.1$'
-          flags: 'm'
+          flags: 'gm'
           error: 'Commit message must include the line: Contributed-under: TianoCore Contribution Agreement 1.1'
           checkAllCommitMessages: 'true'
           accessToken: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
