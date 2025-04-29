@@ -27,6 +27,7 @@ jobs:
         with:
           pattern: '^Signed-off-by: .+ <.+@.+\..+>$'
           error: 'Commit message must include a Signed-off-by tag in the format: Signed-off-by: Name <email>'
+          accessToken: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
           checkAllCommitMessages: 'true'
         continue-on-error: true
       - name: Check commit message contributed under tag
@@ -34,6 +35,7 @@ jobs:
         with:
           pattern: '^Contributed-under: TianoCore Contribution Agreement 1\.1$'
           error: 'Commit message must include Contributed-under: TianoCore Contribution Agreement 1.1'
+          accessToken: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
           checkAllCommitMessages: 'true'
   build:
     needs: check-commit-messages
