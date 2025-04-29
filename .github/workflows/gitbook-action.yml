@@ -14,16 +14,41 @@ on:
   workflow_dispatch:
 
 jobs:
+  check-commit-messages:
+    name: Check Commit Messages
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+      # Step 2: Verify commit messages for Signed-off-by tag
+      - name: Check commit message signed off by tag
+        uses: gsactions/commit-message-checker@v2
+        with:
+          pattern: '^Signed-off-by: .+ <.+@.+\..+>$'
+          flags: 'g'
+          error: 'Commit message must include a Signed-off-by tag in the format: Signed-off-by: Name <email>'
+          checkAllCommitMessages: 'true'
+          accessToken: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
+      - name: Check commit message contributed under tag
+        uses: gsactions/commit-message-checker@v2
+        with:
+          pattern: '^Contributed-under: TianoCore Contribution Agreement 1\.1$'
+          flags: 'm'
+          error: 'Commit message must include the line: Contributed-under: TianoCore Contribution Agreement 1.1'
+          checkAllCommitMessages: 'true'
+          accessToken: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
   build:
+    needs: check-commit-messages
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}
-      cancel-in-progress: false    
+      cancel-in-progress: false
     steps:
     - name: Checkout action
       uses: actions/checkout@v2
     - name: Get Branch Name
-      run: |        
+      run: |
         branch=${{github.ref_name}}
         pubdir=${branch/master/draft}
         pubdir=${pubdir/main/draft}
