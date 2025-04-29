@@ -26,7 +26,7 @@ jobs:
         uses: gsactions/commit-message-checker@v2
         with:
           pattern: '^Signed-off-by: .+ <.+@.+\..+>'
-          flags: 'gm'
+          flags: 'g'
           error: 'Commit message must include a Signed-off-by tag in the format: Signed-off-by: Name <email>'
           checkAllCommitMessages: 'true'
           accessToken: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
