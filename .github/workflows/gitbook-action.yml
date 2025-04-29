@@ -26,12 +26,14 @@ jobs:
         uses: gsactions/commit-message-checker@v2
         with:
           pattern: '^Signed-off-by: .+ <.+@.+\..+>$'
+          error: 'Commit message must include a Signed-off-by tag in the format: Signed-off-by: Name <email>'
           checkAllCommitMessages: 'true'
         continue-on-error: true
       - name: Check commit message contributed under tag
         uses: gsactions/commit-message-checker@v2
         with:
           pattern: '^Contributed-under: TianoCore Contribution Agreement 1\.1$'
+          error: 'Commit message must include Contributed-under: TianoCore Contribution Agreement 1.1'
           checkAllCommitMessages: 'true'
   build:
     needs: check-commit-messages
