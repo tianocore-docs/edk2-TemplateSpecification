@@ -72,7 +72,7 @@ jobs:
       run: |
         echo "ON_PUSH_PUBLISH_BRANCH=pr-pages" >> $GITHUB_ENV
     - name: Wait if Another Gitbook Action in progress
-      - uses: khulnasoft/action-workflow-queue@v1
+      uses: khulnasoft/action-workflow-queue@v1
     - name: Gitbook Action
       uses: zanderzhao/gitbook-action@v1.2.4
       with:
