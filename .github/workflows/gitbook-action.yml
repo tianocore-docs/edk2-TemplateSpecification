@@ -15,7 +15,7 @@ on:
 
 jobs:
   check-commit-messages-signed-off-by:
-    name: Check Commit Messages Signed-off-by tag
+    name: Check Signed-off-by tag
     runs-on: ubuntu-latest
     steps:
       # Step 1: Checkout the repository
@@ -32,12 +32,13 @@ jobs:
           accessToken: ${{secrets.GITBOOK_ACTION_PERSONAL_TOKEN}}
           checkAllCommitMessages: 'true'
   check-commit-messages-contributed-under:
-    name: Check Commit Messages Contronuted-under tag
+    name: Check Contributed-under tag
     runs-on: ubuntu-latest
     steps:
       # Step 1: Checkout the repository
       - name: Checkout code
         uses: actions/checkout@v3
+      # Step 2: Verify commit messages for Contributed-under tag
       - name: Check commit message contributed under tag
         uses: gsactions/commit-message-checker@v2
         with:
