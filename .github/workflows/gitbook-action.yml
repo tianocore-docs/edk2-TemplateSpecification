@@ -13,10 +13,6 @@ on:
       - release/*
   workflow_dispatch:
 
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: false
-
 jobs:
   check-commit-messages-signed-off-by:
     name: Check Commit Messages Signed-off-by tag
@@ -75,6 +71,8 @@ jobs:
       if: ${{ github.event_name != 'push' }}
       run: |
         echo "ON_PUSH_PUBLISH_BRANCH=pr-pages" >> $GITHUB_ENV
+    - name: Wait if Another Gitbook Action in progress
+      - uses: khulnasoft/action-workflow-queue@v1
     - name: Gitbook Action
       uses: zanderzhao/gitbook-action@v1.2.4
       with:
